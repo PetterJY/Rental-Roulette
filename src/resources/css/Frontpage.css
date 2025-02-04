@@ -1,0 +1,14 @@
+.backgroundImage {
+    width: 1920px;
+    height: 1080px;
+    left: 116px;
+    top: 14px;
+    
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: lightgray;
+    mix-blend-mode: darken;
+}
+
