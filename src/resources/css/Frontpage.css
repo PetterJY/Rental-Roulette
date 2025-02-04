@@ -1,14 +1,76 @@
 .backgroundImage {
     width: 1920px;
     height: 1080px;
-    left: 116px;
-    top: 14px;
-    
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: lightgray;
-    mix-blend-mode: darken;
+    left: 0px;
+    top: 140px;
+  position: absolute;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: lightgray;
+  mix-blend-mode: darken;
+  z-index: -1;
 }
 
+
+.logo {
+  width: 100px;
+  height: 100px;
+  left: 15px;
+  top: 15px;
+  position: relative;
+}
+
+#header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+#content {
+  position: relative; /* Keeps everything in normal flow */
+  min-height: 100vh; /* At least full screen height */
+  padding-top: 80px; /* Offset to prevent header overlap */
+  background-image: url("../../resources/images/Trollstigen.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#styledContainer {
+  position: relative; /* Ensures it's above the background */
+  flex-direction: row;
+  z-index: 1; /* Higher than the background */
+  width: 80%;
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+
+}
+
+.text {
+  color: #252422;
+  font-size: 30px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+
+.show-cars {
+  color: orange;
+  z-index: 1000;
+}
+
+.hamburger-menu {
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
