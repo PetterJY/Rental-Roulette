@@ -12,8 +12,8 @@
 }
 
 .rectangle-display {
-  width: 25%;
-  height: 200px;
+  width: 25vw;
+  height: 25vh;
   border-radius: 15px;
   background: radial-gradient(50% 50% at 50% 50%, #fffcf2, #403d39);
 }
@@ -33,4 +33,38 @@
   background-color: #ccc5b9;
   position: relative;
   margin-right: 10px;
+}
+
+.passenger-container {
+  background-color: #d9d9d9;
+  text-align: left;
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  margin: 5px;
+  box-shadow: inset 0 0 10px #000000;
+}
+
+.passenger-count {
+  font-size: 20px;
+  font-family: serif;
+  color: #fffcf2;
+  margin-left: 15px;
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 25px;
+}
+
+#passenger-image {
+  max-width: 25px;
+  max-height: 50%;
+}
+
+#car-image {
+  max-width: 200px;
+  max-height: 50%;
 }
