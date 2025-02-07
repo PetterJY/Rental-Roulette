@@ -4,31 +4,69 @@
 	<meta charset="UTF-8">
 	<title>Rental Roulette Home Page</title>
 	<link rel="stylesheet" href="../../resources/css/index.css">
+	<link rel="stylesheet" href="../../resources/css/Header.css">
+
 </head>
 
 <body>
 	<div id="wrapper">
-		<header id="header">
-			<img src="../../resources/images/logo.png" class="logo">
-			<h1>Rental Roulette</h1>
-			<button class="hamburger-menu">☰</button>
-			<nav>
-				<button>
-					Login
-				</button>
-				<button>
-					Login
-				</button>
-			</nav>
-	</header>
+		<header class="header">
+			<section class="top-header">
+				<img src="../../resources/images/logo.png" id="logo-image">
+				<nav class="nav-bar">
+					<img src="../../resources/images/login.png" id="login-image">
+					<button id="login-create">Login|Register</button>
+				</nav>
+			</section>
+			<hr id="separation-line"></hr>
+		</header>
 		<div id="content">
 			<div id="styledContainer">
-				<h3 class="text">Pickup</h3>
-				<h3 class="text">Dropoff</h3>
+				
+				<section class="pickup-dropoff">
+					<label for="styledContainer" class="pickup-dropoff-text">Pickup</label>
+					<section class="date-picker">
+						<section class="date-picker-content">
+							<p>Date</p>
+							<div class="divider"></div>
+							<p>Time</p>
+						</section>
+					</section>
+					</section>
+				</section>
+				<section class="pickup-dropoff">
+					<label for="styledContainer" class="pickup-dropoff-text">Dropoff</label>
+					<section class="date-picker">
+						<section class="date-picker-content">
+							<p>Date</p>
+							<div class="divider"></div>
+							<p>Time</p>
+						</section>
+					</section>
+				</section>
+				<section class="show-cars">
+					<button class="show-cars-button">
+						Show cars
+					</button>
+				</section>
 			</div>
 		</div>
 	</div>
 		<footer id="footer"> This is the Footer </footer>
 	</div>
+</body>
+</html>
+
+-----------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rental Page</title>
+    <link rel="stylesheet" href="../../resources/css/RentalPage.css">
+</head>
+
+<body>
+  <div class="rectangle-div"></div>
 </body>
 </html>

@@ -41,18 +41,87 @@
 }
 
 #styledContainer {
-  position: relative; /* Ensures it's above the background */
+  position: absolute; /* Ensures it's above the background */
+  justify-content: space-between;
   flex-direction: row;
   z-index: 1; /* Higher than the background */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 80%;
   max-width: 1200px;
   margin: 10px auto;
-  padding: 20px;
   background: white;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   text-align: center;
+  background-position: center;
   display: flex;
+}
+
+
+
+
+.pickup-dropoff {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0% 3% 2% 3%;
+
+}
+
+.pickup-dropoff-text {
+  color: #252422;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  justify-content: left;
+  display: flex;
+}
+
+.show-cars {
+  display: flex;
+  justify-content: center;  /* Centers horizontally */
+  align-items: center;      /* Centers vertically */
+  padding-right: 5.55%;
+}
+
+.show-cars-button {
+  background: #EB5E28;
+  width: 100%;
+  height: 50%;
+  color: white;
+  font-family: Inter, serif;
+
+}
+
+.date-picker {
+  width: 400px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  border: 3px solid #484848;
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-picker-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 16.67%;
+  padding-right: 16.67%;
+}
+
+.divider {
+  width: 3px; /* Thin vertical line */
+  height: 100%; /* Full height of parent */
+  background: #252422;
+  display: flex;
+  justify-content: center;
 }
 
 .text {
@@ -63,11 +132,6 @@
   word-wrap: break-word;
 }
 
-
-.show-cars {
-  color: orange;
-  z-index: 1000;
-}
 
 .hamburger-menu {
   width: 25px;
