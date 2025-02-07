@@ -27,6 +27,7 @@
   position: relative;
   display: flex;
   flex-direction: row;
+  margin: 30px 30px;
 }
 
 #content {
@@ -52,7 +53,6 @@
   border-radius: 10px;
   text-align: center;
   display: flex;
-
 }
 
 .text {
@@ -70,6 +70,9 @@
 }
 
 .hamburger-menu {
+  width: 25px;
+  height: 25px;
+  align-self: center;
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
