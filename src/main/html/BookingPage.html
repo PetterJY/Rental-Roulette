@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="../../resources/css/BookingPage.css">
+</head>
+<body>
+    <main>
+        <section class="driver-information-form">
+            <form action="/submit-booking" method="post" class="grid-container"> 
+            <h2 class="driver-information">Driver Information</h2>   
+                    <div class="e-mail">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>  
+                    <div class="first-name">
+                        <label for="name">First Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="last-name">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="book-car">
+                        <button type="submit">Book Now</button>
+                    </div>
+            </form>
+        </section>
+        <section class="car-information-form">
+            <h2 class="car-information">Car Information</h2>
+            <div class="car-image">
+                <img src="../../resources/images/car.jpg" alt="Car Image">
+            </div>
+            <div class="car-details">
+                <h3 class="car-name">Car Name</h3>
+                <p class="car-description">Car Description</p>
+                <p class="car-price">Car Price</p>
+            </div>
+        <section>
+
+        </section>
+    </main>
+</body>
+</html>
