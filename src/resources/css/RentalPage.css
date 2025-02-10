@@ -57,17 +57,17 @@
 }
 
 .passenger-count {
-  font-size: 20px;
   font-family: serif;
   color: #fffcf2;
+  font-size: 20px;
   margin-left: 15px;
 }
 
 .bottom-section {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 25px;
+  flex-direction: column;
+  margin-top: 60px;
+  margin-left: 15px;
 }
 
 .car-image-wrapper {
@@ -78,6 +78,30 @@
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
+}
+
+.price-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.rental-place {
+  font-family: serif;
+  color: #fffcf2;
+  font-size: 16px;
+}
+
+#price-day {
+  font-family: serif;
+  color: #fffcf2;
+  font-size: 16px;
+}
+
+#price-total {
+  font-family: serif;
+  color: #CCC5B9;
+  font-size: 16px;
+  margin-left: 10px;
 }
 
 #passenger-image {
