@@ -12,10 +12,11 @@
 }
 
 .rectangle-display {
-  width: 25%;
-  height: 200px;
+  width: 25vw;
+  height: 25vh;
   border-radius: 15px;
   background: radial-gradient(50% 50% at 50% 50%, #fffcf2, #403d39);
+  position: relative; 
 }
 
 .sort-bar {
@@ -27,10 +28,89 @@
 }
 
 .sort-button {
-  width: 125px;
-  height: 25px;
-  border-radius: 5px;
   background-color: #ccc5b9;
   position: relative;
+  width: 125px;
+  height: 25px;
   margin-right: 10px;
+  border-radius: 5px;
+}
+
+.passenger-container {
+  background-color: rgba(217, 217, 217, 0.2);
+  flex-direction: row;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  margin: 5px;
+  width: 4vw;
+  height: 5vh;
+  border-radius: 25px;
+}
+
+.car-name {
+  font-size: 20px;
+  font-family: serif;
+  color: #FFFCF2;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.passenger-count {
+  font-family: serif;
+  color: #fffcf2;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  margin-left: 15px;
+}
+
+.car-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+.price-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.rental-place {
+  font-family: serif;
+  color: #fffcf2;
+  font-size: 16px;
+}
+
+#price-day {
+  font-family: serif;
+  color: #fffcf2;
+  font-size: 16px;
+}
+
+#price-total {
+  font-family: serif;
+  color: #CCC5B9;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+#passenger-image {
+  max-width: 25px;
+  max-height: 50%;
+  margin-right: 5px; 
+}
+
+#car-image {
+  max-height: 150px;
+  margin-left: 0;
 }
