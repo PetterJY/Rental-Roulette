@@ -2,15 +2,29 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: black;               /* Black background */
+  background-color: #252422;
   color: white;                          /* Text color for visibility */
-  padding: 10px;                         /* Optional: Adds some padding */
+  padding: 100px;                         /* Optional: Adds some padding */
   height: 50px;                          /* Adjust height as needed */
+
+}
+
+.title {
+  font-size: 35px;
+  font-family: inter, Serif ;
 }
 
 .footer-item {
   display: flex;
   justify-content: center; /* Center text horizontally */
-  align-items: center;     /* Center text vertically */
+  flex-direction: column;
+  font-size: 20px;
+}
+
+#creators {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
