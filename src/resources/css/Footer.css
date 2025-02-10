@@ -1,0 +1,16 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;               /* Black background */
+  color: white;                          /* Text color for visibility */
+  padding: 10px;                         /* Optional: Adds some padding */
+  height: 50px;                          /* Adjust height as needed */
+}
+
+.footer-item {
+  display: flex;
+  justify-content: center; /* Center text horizontally */
+  align-items: center;     /* Center text vertically */
+}
+
