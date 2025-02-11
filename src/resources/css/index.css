@@ -150,6 +150,21 @@ body {
   font-size: 20px;
 }
 
+.date-picker-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.date-picker-button:hover{
+  cursor: pointer;
+}
+
+
 .divider {
   width: 2px;
   height: 105%;
@@ -163,6 +178,8 @@ body {
   width: 40px; /* Adjust as needed */
   height: auto;
 }
+
+
 
 .text {
   color: #252422;
