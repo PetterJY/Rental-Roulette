@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
 
+:root {
+  --center-container-width: 75vw;
+  --center-element-width: calc(var(--center-container-width) / 4);
+}
+
 .backgroundImage {
   width: 1920px;
   height: 1080px;
@@ -59,7 +64,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: var(--center-container-width);
+  height: 25vh;
   max-width: 1200px;
   min-height: 250px;
   min-width: 800px;
@@ -74,6 +80,35 @@ body {
 }
 
 
+@media (max-width: 1000px) {
+
+
+
+  #styledContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+  }
+
+  .show-cars-button {
+    grid-row: 2 !important;
+    grid-column: 1 / span 2 !important;
+    background-color: #61dafb !important;
+    color: black !important;
+  }
+
+  #dropoff {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  #pickup {
+    grid-row: 1;
+    grid-column: 1;
+  }
+}
+
 
 
 .pickup-dropoff {
@@ -81,7 +116,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   padding: 0% 3% 2% 3%;
-
+  width: 15vw;
 }
 
 p {
@@ -109,7 +144,7 @@ p {
 
 .show-cars-button {
   background: #EB5E28;
-  width: 240px;
+  width: var(--center-element-width);
   height: 70px;
   color: white;
   border: 0px;
@@ -132,7 +167,7 @@ p {
 }
 
 .date-time-picker {
-  width: 350px;
+  width: var(--center-element-width);
   height: 70px;
   flex-shrink: 0;
   border-radius: 20px;
