@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
 .backgroundImage {
-    width: 1920px;
-    height: 1080px;
-    left: 0px;
-    top: 140px;
+  width: 1920px;
+  height: 1080px;
+  left: 0px;
+  top: 140px;
   position: absolute;
 
   flex-shrink: 0;
@@ -82,11 +84,15 @@ body {
 
 }
 
+p {
+  font-family: "Poppins", Sans-Serif;
+}
+
 .pickup-dropoff-text {
   color: #252422;
-  font-family: Inter, serif;
-  font-size: 20px;
-  font-style: normal;
+  font-family: "Poppins", Sans-Serif;
+  font-size: 25px;
+  font-weight: bold;
   margin: 10px;
   font-weight: 400;
   line-height: normal;
@@ -109,7 +115,20 @@ body {
   border: 0px;
   font-size: 20px;
   border-radius: 20px; /* Adjust value for more/less rounding */
-  font-family: Inter, serif;
+  font-family: "Poppins", Sans-Serif;
+  cursor: pointer;
+}
+
+.show-cars-button:hover {
+  background: #C64D1F; /* Darker shade of #EB5E28 */
+  color: #F2F2F2;
+  cursor: pointer; /* Optional: Makes it clear it's clickable */
+}
+
+.show-cars-button:active {
+  background: #A33F19; /* Darker shade of #EB5E28 */
+  color: #E6E6E6;
+  cursor: pointer; /* Optional: Makes it clear it's clickable */
 }
 
 .date-time-picker {
@@ -137,18 +156,35 @@ body {
   align-items: center;
   justify-content: center; /* Center content in each half */
   flex: 1; /* Each takes half of the space */
-}
-
-.date-picker-content {
   gap: 8px; /* Space between image and text */
   flex-direction: row; /* Stack image + text */
   font-size: 20px;
 }
 
-.time-picker-content {
-  justify-content: center; /* Center "12:30" in its half */
-  font-size: 20px;
+.date-picker-button {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
 }
+
+.time-picker-button {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.date-picker-button:hover{
+  cursor: pointer;
+}
+
+.time-picker-button:hover{
+  cursor: pointer;
+}
+
 
 .divider {
   width: 2px;
@@ -164,10 +200,12 @@ body {
   height: auto;
 }
 
+
+
 .text {
   color: #252422;
   font-size: 35px;
-  font-family: Inter, serif;
+  font-family: "Poppins", Sans-Serif;
   font-weight: 400;
   word-wrap: break-word;
 }

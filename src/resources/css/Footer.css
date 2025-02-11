@@ -1,18 +1,21 @@
 footer {
   display: flex;
+  font-family: "Poppins", Sans-Serif;
   flex-direction: row;
   align-items: flex-start; /* Align items to the start */
   justify-content: space-between;
   background-color: #252422;
-  color: white; /* Text color for visibility */
+  color: #FFFCF2; /* Text color for visibility */
   padding: 20px 16.67%; /* Adjusted padding */
   height: auto; /* Adjust height as needed */
 }
 
 .footer-item {
   display: flex;
+  color: #FFFCF2;
   justify-content: center; /* Center text horizontally */
   flex-direction: column;
+  font-family: "Poppins", Sans-Serif;
   font-size: 20px;
   list-style: none; /* Removes bullet points */
   padding: 0; /* Removes default padding */
@@ -24,11 +27,30 @@ footer {
   flex-direction: column;
 }
 
-a {
-  color: white; /* Set link color to white */
-  text-decoration: none; /* Remove underline */
+footer a {
+  position: relative;
+  text-decoration: none; /* Remove default underline */
+  color: #FFFCF2; /* Keep original text color */
 }
 
-footer a:hover {
-  text-decoration: underline; /* Optional: Add underline on hover */
+footer a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust as needed */
+  width: 0;
+  height: 2px; /* Thickness of underline */
+  background-color: currentColor; /* Matches text color */
+  transition: width 0.5s ease-in-out;
+}
+
+footer a:hover::after {
+  width: 100%;
+}
+
+.trademark {
+  position: absolute;
+  padding: 0px 0px 20px 20px;
+  color: #CCC5B9;
+  font-family: "Poppins", Sans-Serif;
 }
