@@ -47,6 +47,23 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.rectangle-display {
+  width: 15vw;
+  aspect-ratio: 7/5;
+  border-radius: 15px;
+  background: radial-gradient(50% 50% at 50% 50%, #fffcf2, #403d39);
+  position: relative; 
+}
+
+.rectangle-display > img {
+  width: 10vw;
+  object-fit:cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* Form Styles */
 form label {
   font-size: 26px;
@@ -77,21 +94,29 @@ form button:hover {
   background-color: #555;
 }
 
-  img {
-  width: 10vw;
-  object-fit:cover;
+/* Car Information Styles */
+.car-information-form {
+  display: grid;
+  row-gap: 1px;
+  row-gap: 0.5em;
 }
 
-/* Footer Styles */
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  position: relative;
-  width: 100%;
-  bottom: 0;
+.rectangle-display {
+  grid-column: 1;
+  grid-row: 1;
 }
+
+.car-rental-details {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.rental-schedule {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+/* Grid Styles */
 
 h2 {
   font-size: 26px;
@@ -181,4 +206,21 @@ h2 {
     grid-column: 1;
     grid-row: 5
   }
+  .rectangle-display {
+    width: 30vw;
+    aspect-ratio: 7/5;
+    border-radius: 15px;
+    background: radial-gradient(50% 50% at 50% 50%, #fffcf2, #403d39);
+    position: relative; 
+  }
+  
+  .rectangle-display > img {
+    width: 20vw;
+    object-fit:cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
 }
