@@ -50,7 +50,7 @@ body {
   padding-top: 80px; /* Offset to prevent header overlap */
   background-image:
           linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #252422 95%),
-          url("../images/trollstigen.jpg");
+          url("../resources/images/trollstigen.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

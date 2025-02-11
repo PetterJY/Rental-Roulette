@@ -1,0 +1,43 @@
+.complete-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.triple-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 25px;
+}
+
+
+.sort-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding: 10px;
+  margin-left: 25px;
+}
+
+.sort-button {
+  background-color: #ccc5b9;
+  position: relative;
+  width: 125px;
+  height: 25px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
