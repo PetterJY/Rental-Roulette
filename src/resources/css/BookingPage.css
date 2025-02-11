@@ -6,14 +6,6 @@ body {
   background-color: #252422;
 }
 
-/* Header Styles */
-header {
-  background-color: #333;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
-}
-
 /* Main Content Styles */
 main {
   display: flex;
@@ -34,6 +26,7 @@ main {
   margin: 20px;
   background-color: #FFFCF2;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
 }
 
 .car-information-form {
@@ -45,6 +38,7 @@ main {
   margin: 20px;
   background-color: #FFFCF2;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
 }
 
 .rectangle-display {
@@ -91,14 +85,22 @@ form button {
 }
 
 form button:hover {
-  background-color: #555;
+  background-color: #eb5f28c9;
 }
 
 /* Car Information Styles */
 .car-information-form {
-  display: grid;
-  row-gap: 1px;
-  row-gap: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: center;
+  height:fit-content;
+  width: 100%;
 }
 
 .rectangle-display {
@@ -111,9 +113,33 @@ form button:hover {
   grid-row: 1;
 }
 
-.rental-schedule {
-  grid-column: 1 / span 2;
-  grid-row: 2;
+.rental-schedule-container {
+  display: grid;
+  display: flex;
+  flex-direction: row;
+}
+.rental-schedule-logos {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+  margin-top: 0.5em;
+}
+.vertical-line {
+  width: 2px;
+  background-color: black;
+  height: 25%; /* Adjust the height as needed */
+  margin: 0em 1em; /* Optional: Add some margin to create space around the line */
+}
+
+.rental-schedule-logos img{
+  width: 26px;
+  aspect-ratio: 1/1;
+}
+.rental-schedule-text {
+
 }
 
 /* Grid Styles */
@@ -122,6 +148,7 @@ h2 {
   font-size: 26px;
   font-weight: 500;
 }
+
 
 
 .grid-container {
