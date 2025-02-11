@@ -1,5 +1,6 @@
 footer {
   display: flex;
+  font-family: "Poppins", Sans-Serif;
   flex-direction: row;
   align-items: flex-start; /* Align items to the start */
   justify-content: space-between;
@@ -14,6 +15,7 @@ footer {
   color: #FFFCF2;
   justify-content: center; /* Center text horizontally */
   flex-direction: column;
+  font-family: "Poppins", Sans-Serif;
   font-size: 20px;
   list-style: none; /* Removes bullet points */
   padding: 0; /* Removes default padding */
@@ -26,16 +28,29 @@ footer {
 }
 
 footer a {
-  color: #FFFCF2; /* Set link color to white */
-  text-decoration: none; /* Remove underline */
+  position: relative;
+  text-decoration: none; /* Remove default underline */
+  color: #FFFCF2; /* Keep original text color */
 }
 
-footer a:hover {
-  text-decoration: underline; /* Optional: Add underline on hover */
+footer a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust as needed */
+  width: 0;
+  height: 2px; /* Thickness of underline */
+  background-color: currentColor; /* Matches text color */
+  transition: width 0.5s ease-in-out;
+}
+
+footer a:hover::after {
+  width: 100%;
 }
 
 .trademark {
   position: absolute;
   padding: 0px 0px 20px 20px;
   color: #CCC5B9;
+  font-family: "Poppins", Sans-Serif;
 }

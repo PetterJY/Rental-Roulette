@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
 .backgroundImage {
   width: 1920px;
   height: 1080px;
@@ -82,11 +84,15 @@ body {
 
 }
 
+p {
+  font-family: "Poppins", Sans-Serif;
+}
+
 .pickup-dropoff-text {
   color: #252422;
-  font-family: Inter, serif;
-  font-size: 20px;
-  font-style: normal;
+  font-family: "Poppins", Sans-Serif;
+  font-size: 25px;
+  font-weight: bold;
   margin: 10px;
   font-weight: 400;
   line-height: normal;
@@ -109,7 +115,7 @@ body {
   border: 0px;
   font-size: 20px;
   border-radius: 20px; /* Adjust value for more/less rounding */
-  font-family: Inter, serif;
+  font-family: "Poppins", Sans-Serif;
   cursor: pointer;
 }
 
@@ -199,7 +205,7 @@ body {
 .text {
   color: #252422;
   font-size: 35px;
-  font-family: Inter, serif;
+  font-family: "Poppins", Sans-Serif;
   font-weight: 400;
   word-wrap: break-word;
 }
