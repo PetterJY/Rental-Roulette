@@ -1,0 +1,183 @@
+.backgroundImage {
+    width: 1920px;
+    height: 1080px;
+    left: 0px;
+    top: 140px;
+  position: absolute;
+
+  flex-shrink: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  mix-blend-mode: normal;
+  z-index: -1;
+}
+
+
+.logo {
+  width: 100px;
+  height: 100px;
+  left: 15px;
+  top: 15px;
+  position: relative;
+}
+
+
+
+#header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 30px 30px;
+}
+
+body {
+  background-color: #252422; /* Match footer background color */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+#content {
+  position: relative; /* Keeps everything in normal flow */
+  min-height: 100vh; /* At least full screen height */
+  padding-top: 80px; /* Offset to prevent header overlap */
+  background-image:
+          linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #252422 95%),
+          url("../images/trollstigen.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#styledContainer {
+  position: absolute; /* Ensures it's above the background */
+  justify-content: space-between;
+  flex-direction: row;
+  z-index: 1; /* Higher than the background */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 1200px;
+  min-height: 250px;
+  min-width: 800px;
+  margin: 10px auto;
+  background: #FFFCF2;
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  text-align: center;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+.pickup-dropoff {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0% 3% 2% 3%;
+
+}
+
+.pickup-dropoff-text {
+  color: #252422;
+  font-family: Inter, serif;
+  font-size: 20px;
+  font-style: normal;
+  margin: 10px;
+  font-weight: 400;
+  line-height: normal;
+  justify-content: left;
+  display: flex;
+}
+
+.show-cars {
+  display: flex;
+  justify-content: center;  /* Centers horizontally */
+  align-items: center;      /* Centers vertically */
+  padding-right: 5.55%;
+}
+
+.show-cars-button {
+  background: #EB5E28;
+  width: 240px;
+  height: 70px;
+  color: white;
+  border: 0px;
+  font-size: 20px;
+  border-radius: 20px; /* Adjust value for more/less rounding */
+  font-family: Inter, serif;
+}
+
+.date-time-picker {
+  width: 350px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 2px solid #484848;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.date-time-picker-content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; /* Needed for the absolute divider */
+}
+
+.date-picker-content, .time-picker-content {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content in each half */
+  flex: 1; /* Each takes half of the space */
+}
+
+.date-picker-content {
+  gap: 8px; /* Space between image and text */
+  flex-direction: row; /* Stack image + text */
+  font-size: 20px;
+}
+
+.time-picker-content {
+  justify-content: center; /* Center "12:30" in its half */
+  font-size: 20px;
+}
+
+.divider {
+  width: 2px;
+  height: 105%;
+  background: #252422;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Perfectly center the divider */
+}
+
+.calendar-image {
+  width: 40px; /* Adjust as needed */
+  height: auto;
+}
+
+.text {
+  color: #252422;
+  font-size: 35px;
+  font-family: Inter, serif;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+
+.hamburger-menu {
+  width: 25px;
+  height: 25px;
+  align-self: center;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}

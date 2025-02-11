@@ -1,0 +1,34 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Align items to the start */
+  justify-content: space-between;
+  background-color: #252422;
+  color: white; /* Text color for visibility */
+  padding: 20px 16.67%; /* Adjusted padding */
+  height: auto; /* Adjust height as needed */
+}
+
+.footer-item {
+  display: flex;
+  justify-content: center; /* Center text horizontally */
+  flex-direction: column;
+  font-size: 20px;
+  list-style: none; /* Removes bullet points */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
+#contact, #links, #creators {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: white; /* Set link color to white */
+  text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Optional: Add underline on hover */
+}

@@ -1,0 +1,138 @@
+.complete-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.triple-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 25px;
+}
+
+.car-display {
+  width: 27.5vw;
+  height: 30vh;
+  border-radius: 15px;
+  background: radial-gradient(50% 50% at 50% 50%, #fffcf2, #403d39);
+  position: relative; 
+  overflow: hidden; 
+}
+
+.sort-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding: 10px;
+  margin-left: 25px;
+}
+
+.sort-button {
+  background-color: #ccc5b9;
+  position: relative;
+  width: 125px;
+  height: 25px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.passenger-tag {
+  background-color: rgba(217, 217, 217, 0.2);
+  flex-direction: row;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  margin-left: 15px;
+  width: 4vw;
+  height: 5vh;
+  border-radius: 25px;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
+
+.car-name {
+  font-size: 20px;
+  font-family: serif;
+  color: #FFFCF2;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.car-tag {
+  background-color: #EB5E28; /*EB5E28*/
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+
+  margin-left: 30%;
+  width: 4vw;
+  height: 5vh;
+  border-radius: 25px;
+
+  font-family: serif;
+  color: #FFFCF2;
+}
+
+.passenger-count {
+  font-family: serif;
+  color: #fffcf2;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.car-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-75%, -60%); 
+}
+
+.rental-place {
+  font-family: serif;
+  color: #fffcf2;
+  font-size: 16px;
+  margin-top: 60px;
+}
+
+.price-section {
+  display: flex;
+  flex-direction: row;
+}
+
+#price-day {
+  font-family: serif;
+  color: #fffcf2;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#price-total {
+  font-family: serif;
+  color: #CCC5B9;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+#passenger-image {
+  max-width: 25px;
+  max-height: 50%;
+  margin-right: 5px; 
+}
+
+#car-image {
+  height: 150px;
+}
