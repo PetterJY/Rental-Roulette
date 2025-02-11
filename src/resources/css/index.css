@@ -1,8 +1,8 @@
 .backgroundImage {
-    width: 1920px;
-    height: 1080px;
-    left: 0px;
-    top: 140px;
+  width: 1920px;
+  height: 1080px;
+  left: 0px;
+  top: 140px;
   position: absolute;
 
   flex-shrink: 0;
@@ -110,6 +110,13 @@ body {
   font-size: 20px;
   border-radius: 20px; /* Adjust value for more/less rounding */
   font-family: Inter, serif;
+  cursor: pointer;
+}
+
+.show-cars-button:hover {
+  background: #C64D1F; /* Darker shade of #EB5E28 */
+  cursor: pointer; /* Optional: Makes it clear it's clickable */
+  transition: background 0.2s ease-in-out; /* Smooth transition */
 }
 
 .date-time-picker {
@@ -137,23 +144,21 @@ body {
   align-items: center;
   justify-content: center; /* Center content in each half */
   flex: 1; /* Each takes half of the space */
-}
-
-.date-picker-content {
   gap: 8px; /* Space between image and text */
   flex-direction: row; /* Stack image + text */
   font-size: 20px;
 }
 
-.time-picker-content {
-  justify-content: center; /* Center "12:30" in its half */
-  font-size: 20px;
-}
-
 .date-picker-button {
   position: absolute;
-  top: 0;
-  left: 0;
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.time-picker-button {
+  position: absolute;
   width: 50%;
   height: 100%;
   opacity: 0;
@@ -161,6 +166,10 @@ body {
 }
 
 .date-picker-button:hover{
+  cursor: pointer;
+}
+
+.time-picker-button:hover{
   cursor: pointer;
 }
 
