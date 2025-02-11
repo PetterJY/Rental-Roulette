@@ -45,7 +45,7 @@ export default function RentalPage(props) {
           <article className="triple-section">
           </article>
             <article className="triple-section">
-              <CarDisplay carName="Volvo" carTag="Sedan" passengerCount="5" rentalPage="Rental Place" priceDay="Price per Day" priceTotal="Total Price" />
+              <CarDisplay carName="Volvo" carTag="Diesel" passengerCount="5" rentalPage="Rental Place" priceDay="Price per Day" priceTotal="Total Price" />
           </article>
         </main>
       </main>

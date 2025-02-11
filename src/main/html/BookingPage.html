@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking Page</title>
     <link rel="stylesheet" href="../../resources/css/BookingPage.css">
+    <link rel="stylesheet" href="../../resources/css/Header.css">
 </head>
 <body>
+    <div id="wrapper">
+        <header class="header">
+            <div class="top-header">
+                <img src="../../resources/images/logo.png" id="logo-image">
+                <nav class="nav-bar">
+                    <img src="../../resources/images/login.png" id="login-image">
+                    <button id="login-create">Login|Register</button>
+                </nav>
+            </div>
+        </header>
+    </div>
     <main>
         <section class="driver-information-form">
             <form action="/submit-booking" method="post" class="grid-container"> 
-            <h2 class="driver-information">Driver Information</h2>   
+                <h2 class="driver-information">Driver Information</h2>   
                     <div class="e-mail">
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
@@ -23,35 +35,46 @@
                         <label for="last-name">Last Name:</label>
                         <input type="text" id="last-name" name="last-name" required>
                     </div>
-                    <div class="book-car">
-                        <button type="submit">Book Now</button>
-                    </div>
             </form>
+                <button type="submit">Book Now</button>
         </section>
-        <section class="car-information-form">
-            <h2 class="car-information">Car Information</h2>
-            <div class="car-image">
-                <img src="../../resources/images/car.png" alt="Car Image">
-            </div>
-            <div class="car-rental-details">
-                <h3 class="car-name">Car Name</h3>
-                <p class="rent-period">Car rental period</p>
-            </div>
-            <div class="rental-schedule">
-                <div class="pickup-info">
-                    <h3 class="pickup">Pickup</h3>
-                    <p class="pickup-place">Ålesund</p>
-                    <p class="pickup-time">Da., xx.Mnth., year | xx:xx</p>
-                </div>
-                <div class="dropoff-info">
-                    <h3 class="dropoff">Dropoff</h3>
-                    <p class="dropoff-place">Ålesund</p>
-                    <p class="dropoff-time">Da., xx.Mnth., year | xx:xx</p>
-            </div>
-            
-        <section>
 
-        </section>
+        <div class="car-information-form">
+            <header class="car-rental-header">
+                <div class="rectangle-display">
+                    <img id="car-image" src="../../resources/images/car.png">
+                </div>      
+                <div class="car-rental-details">
+                    <h2 class="car-name">Car Name</h2>
+                    <p class="rent-period">Car rental period</p>
+                </div>
+            </header>
+            <section class="rental-schedule-container">
+
+                <div class="rental-schedule-logos">
+                    <img src="../../resources/images/storage-logo.png" class="pickup-logo", class="storage-logo">
+                    <div class="vertical-line"></div>
+                    <img src="../../resources/images/storage-logo.png" class="dropoff-logo", class="storage-logo">
+                </div>
+                <div class="rental-schedule-text">
+                    <div class="pickup-info">
+                        <p class="pickup">Pickup</p>
+                        <h4>Ålesund</h4>
+                        <p class="pickup-time">Da., xx.Mnth., year | xx:xx</p>
+                    </div>
+                    <div class="dropoff-info">
+                        <p class="dropoff">Dropoff</p>
+                        <h4>Ålesund</h4>
+                        <p class="dropoff-time">Da., xx.Mnth., year | xx:xx</p>
+                    </div>
+                </div>
+            </section>
+            <div class="payment-details">
+                <p>Renting costs:</p>
+                <p>xxxxkr/day</p>
+                <h3>Total: XX XXXkr</h3>
+            </div>
+        </div>
     </main>
 </body>
 </html>
