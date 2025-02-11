@@ -22,11 +22,19 @@
   position: relative;
 }
 
+
+
 #header {
   position: relative;
   display: flex;
   flex-direction: row;
   margin: 30px 30px;
+}
+
+body {
+  background-color: #252422; /* Match footer background color */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
 #content {
