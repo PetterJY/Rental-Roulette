@@ -11,12 +11,13 @@
   margin: 25px;
 }
 
-.rectangle-display {
-  width: 25vw;
-  height: 25vh;
+.car-display {
+  width: 27.5vw;
+  height: 30vh;
   border-radius: 15px;
   background: radial-gradient(50% 50% at 50% 50%, #fffcf2, #403d39);
   position: relative; 
+  overflow: hidden; 
 }
 
 .sort-bar {
@@ -42,7 +43,7 @@
   display: flex;
   align-items: center; 
   justify-content: center; 
-  margin: 5px;
+  margin-left: 15px;
   width: 4vw;
   height: 5vh;
   border-radius: 25px;
@@ -66,7 +67,6 @@
 .bottom-section {
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
   margin-left: 15px;
 }
 
@@ -80,21 +80,23 @@
   transform: translate(-50%, -50%); 
 }
 
-.price-section {
-  display: flex;
-  flex-direction: row;
-}
-
 .rental-place {
   font-family: serif;
   color: #fffcf2;
   font-size: 16px;
+  margin-top: 60px;
+}
+
+.price-section {
+  display: flex;
+  flex-direction: row;
 }
 
 #price-day {
   font-family: serif;
   color: #fffcf2;
   font-size: 16px;
+  margin-bottom: 10px;
 }
 
 #price-total {
@@ -111,6 +113,5 @@
 }
 
 #car-image {
-  max-height: 150px;
-  margin-left: 0;
+  height: 150px;
 }
