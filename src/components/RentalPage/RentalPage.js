@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
 import './RentalPage.css';
-import './Header.css';
-import './Footer.css';
-import CarDisplay from './CarDisplay';
+import '../Header/Header.css';
+import '../Footer/Footer.css';
+import CarDisplay from '../CarDisplay/CarDisplay';
 
 export default function RentalPage(props) {
   return (

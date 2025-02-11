@@ -1,9 +1,9 @@
 import React from 'react';
-import RentalPage from './RentalPage';
-import Header from './Header';
-import Footer from './Footer';
+import RentalPage from './RentalPage/RentalPage';
+import Header from './Header/Header';
+import Footer from './Footer/Footer';
 import './App.css';
-import CarDisplay from './CarDisplay';
+import CarDisplay from './CarDisplay/CarDisplay';
 
 function App() {
   return (
