@@ -1,6 +1,6 @@
 .complete-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -29,29 +29,10 @@
   border-radius: 5px;
 }
 
-.passenger-tag {
-  background-color: rgba(217, 217, 217, 0.2);
-  flex-direction: row;
-  display: flex;
-  align-items: center; 
-  justify-content: center; 
-  margin-left: 15px;
-  width: 4vw;
-  height: 5vh;
-  border-radius: 25px;
-}
-
 .top-section {
   display: flex;
   flex-direction: row;
   margin-top: 5px;
-}
-
-.passenger-count {
-  font-family: serif;
-  color: #fffcf2;
-  font-size: 20px;
-  margin-left: 15px;
 }
 
 .bottom-section {

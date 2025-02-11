@@ -41,11 +41,7 @@ export default function RentalPage(props) {
 
       <main className="main-body">
         <main className="complete-section">
-          <article className="triple-section">
-          </article>
-            <article className="triple-section">
-              <CarDisplay carName="Volvo" carTag="Diesel" passengerCount="5" rentalPage="Rental Place" priceDay="Price per Day" priceTotal="Total Price" />
-          </article>
+          {props.children}
         </main>
       </main>
     </div>

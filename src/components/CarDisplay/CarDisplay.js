@@ -1,4 +1,6 @@
 import "./CarDisplay.css";
+import carImage from "../../resources/images/car.png"; 
+import passengerImage from "../../resources/images/passenger.png";
 
 const CarDisplay = (props) => {
   return ( 
@@ -8,11 +10,11 @@ const CarDisplay = (props) => {
         <article class="car-tag">{props.carTag}</article>
       </section>
       <aside class="passenger-tag">
-        <img id="passenger-image" src="../resources/images/passenger.png"></img>
+        <img id="passenger-image" src={passengerImage}></img>
         <h2 class="passenger-count">{props.passengerCount}</h2>
       </aside>
       <figure class="car-image-wrapper">
-        <img id="car-image" src="../resources/images/car.png"></img>
+        <img id="car-image" src={carImage}></img>
       </figure>
       <section class="bottom-section">
         <h2 class="rental-place">{props.rentalPage}</h2>
