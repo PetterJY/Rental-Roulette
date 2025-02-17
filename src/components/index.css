@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
 
 :root {
@@ -58,7 +59,7 @@ body {
 
 #styledContainer {
   position: absolute; /* Ensures it's above the background */
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: row;
   z-index: 1; /* Higher than the background */
   top: 50%;
@@ -66,57 +67,26 @@ body {
   transform: translate(-50%, -50%);
   width: var(--center-container-width);
   height: 25vh;
-  max-width: 1200px;
   min-height: 250px;
-  min-width: 800px;
-  margin: 10px auto;
+  min-width: 500px;
   background: #FFFCF2;
   box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   text-align: center;
   background-position: center;
   display: flex;
-  align-items: center;
 }
 
 
-@media (max-width: 1000px) {
 
-
-
-  #styledContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 10px;
-  }
-
-  .show-cars-button {
-    grid-row: 2 !important;
-    grid-column: 1 / span 2 !important;
-    background-color: #61dafb !important;
-    color: black !important;
-  }
-
-  #dropoff {
-    grid-row: 1;
-    grid-column: 2;
-  }
-
-  #pickup {
-    grid-row: 1;
-    grid-column: 1;
-  }
-}
 
 
 
 .pickup-dropoff {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 0% 3% 2% 3%;
-  width: 15vw;
+  justify-content: center; /* Center vertically */
+  width: 15vw; /* Ensure it's still responsive */
 }
 
 p {
@@ -139,19 +109,20 @@ p {
   display: flex;
   justify-content: center;  /* Centers horizontally */
   align-items: center;      /* Centers vertically */
-  padding-right: 5.55%;
 }
 
 .show-cars-button {
   background: #EB5E28;
   width: var(--center-element-width);
-  height: 70px;
+  height: 74px;
   color: white;
   border: 0px;
   font-size: 20px;
   border-radius: 20px; /* Adjust value for more/less rounding */
   font-family: "Poppins", Sans-Serif;
+  margin-top: 0px;
   cursor: pointer;
+  margin-top: 33px;
 }
 
 .show-cars-button:hover {
@@ -253,4 +224,38 @@ p {
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+
+  #styledContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    column-gap: 20px;
+    padding-left: 20px; /* Gap on the left side */
+    padding-right: 20px; /* Gap on the right side */
+  }
+
+  #styledContainer > * {
+    width: 100%; /* Ensures elements take full width */
+  }
+
+  .show-cars {
+    grid-column: span 2; /* Make button span 2 columns */
+    grid-row: span 1; /* Make button span 1 row */
+    width: 100%; /* Ensure button spans the entire grid space */
+    margin-top: -33px;
+
+  }
+
+  .show-cars-button {
+    width: 100%;
+  }
+
+  .date-time-picker {
+    width: 100%;
+    justify-self: center;
+    grid-column: span 2; /* Make date-time-picker span 2 columns */
+  }
+
 }
