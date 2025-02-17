@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", Sans-Serif;
   margin: 0;
   padding: 0;
   background-color: #252422;
@@ -155,7 +156,13 @@ form button:hover {
   aspect-ratio: 1/1;
 }
 .rental-schedule-text {
-
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+  margin-top: 0.5em;
 }
 
 /* Grid Styles */
@@ -164,8 +171,6 @@ h2 {
   font-size: 26px;
   font-weight: 500;
 }
-
-
 
 .grid-container {
   display: grid;
@@ -206,7 +211,8 @@ h2 {
 
 .car-name {
   color:#252422;
-  font-size: 26px;
+  font-size: 20px;
+  font-family: "Poppins", Sans-Serif;
 }
 
 @media (max-width: 1000px) {
