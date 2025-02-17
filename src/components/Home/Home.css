@@ -50,7 +50,7 @@ body {
   padding-top: 80px; /* Offset to prevent header overlap */
   background-image:
           linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #252422 95%),
-          url("../resources/images/trollstigen.jpg");
+          url("../../resources/images/trollstigen.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -253,4 +253,23 @@ p {
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.home p {
+  font-size: 1.2rem;
 }
