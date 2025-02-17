@@ -16,7 +16,7 @@ const Footer = () => {
 		<nav id="links">
 			<h3>Links</h3>
 			<ul class="footer-item">
-				<li><a href="https://github.com/">GitHub</a></li>
+				<li><a href="https://github.com/PetterJY/Aalesund-Rental">GitHub</a></li>
 			</ul>
 		</nav>
 		
