@@ -204,6 +204,11 @@ h2 {
   grid-row: 4
 }
 
+.car-name {
+  color:#252422;
+  font-size: 26px;
+}
+
 @media (max-width: 1000px) {
   main {
     flex-direction: column-reverse;

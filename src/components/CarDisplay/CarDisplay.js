@@ -3,7 +3,7 @@ import carImage from "../../resources/images/car.png";
 import passengerImage from "../../resources/images/passenger.png";
 
 const CarDisplay = (props) => {
-  return ( 
+  return (
     <article class="car-display">
       <section class="top-section">
         <h2 class="car-name">{props.carName}</h2>
