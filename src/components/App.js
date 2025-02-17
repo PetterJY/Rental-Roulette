@@ -13,7 +13,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route index element={<Navigate to={"/home"} replace />} />
     <Route path={"home"} element={<Home />} />
     <Route path={"rental"} element={<RentalPageExample />} />
-    <Route path={"booking"} element={<BookingPage />} />
+    <Route path={"booking"} element={<BookingPageExample />} />
   </Route>
 ))
 
@@ -40,6 +40,12 @@ function RentalPageExample() {
       <CarDisplay carName="Mercedes" carTag="Sedan" passengerCount="4" rentalPlace="Ålesund" priceDay="$100" priceTotal="$600"/>
       <CarDisplay carName="Audi" carTag="Sedan" passengerCount="4" rentalPlace="Ålesund" priceDay="$100" priceTotal="$600"/>
     </RentalPage>
+  );
+}
+
+function BookingPageExample() {
+  return (
+    <BookingPage carName="Volvo" rentalPeriod="5 days" pickUpLocation="Ålesund" pickUpTime="12:00" dropOffLocation="Oslo" dropOffTime="12:00" costPerDay="$100" totalCost="$500"/>
   );
 }
 
