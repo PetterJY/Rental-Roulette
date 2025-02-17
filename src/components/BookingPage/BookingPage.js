@@ -31,7 +31,7 @@ const BookingPage = (props) => {
 							<img id="car-image" src={carImage}></img>
 						</div>      
 						<div class="car-rental-details">
-							<h2 class="car-name">{props.carName}</h2>
+							<h2>{props.carName}</h2>
 							<p class="rent-period">{props.rentalPeriod}</p>
 						</div>
 					</header>

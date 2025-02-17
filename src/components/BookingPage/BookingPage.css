@@ -64,15 +64,15 @@ main {
   border-radius: 15px;
   background: radial-gradient(50% 50% at 50% 50%, #fffcf2, #403d39);
   position: relative; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rectangle-display > img {
-  width: 10vw;
-  object-fit:cover;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: auto;
+  min-height: 100%;
+  object-fit: contain;
 }
 
 /* Form Styles */
@@ -93,7 +93,7 @@ form input, form select, form textarea {
 button {
   padding: 20px;
   background-color: #EB5E28;
-  color: white;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 15px;
   cursor: pointer;
@@ -128,6 +128,7 @@ form button:hover {
 .car-rental-details {
   grid-column: 2;
   grid-row: 1;
+  color: #252422;
 }
 
 .rental-schedule-container {
@@ -170,6 +171,7 @@ form button:hover {
 h2 {
   font-size: 26px;
   font-weight: 500;
+  color: #252422;
 }
 
 .grid-container {
@@ -207,12 +209,6 @@ h2 {
 .book-car {
   grid-column: 2;
   grid-row: 4
-}
-
-.car-name {
-  color:#252422;
-  font-size: 20px;
-  font-family: "Poppins", Sans-Serif;
 }
 
 @media (max-width: 1000px) {
@@ -269,12 +265,9 @@ h2 {
   }
   
   .rectangle-display > img {
-    width: 20vw;
-    object-fit:cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: auto;
+    min-height: 100%;
+    object-fit: contain;
   }
   
 }
