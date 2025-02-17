@@ -2,8 +2,8 @@ import React from 'react';
 import RentalPage from './RentalPage/RentalPage';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
-import './App.css';
 import CarDisplay from './CarDisplay/CarDisplay';
+import './App.css';
 
 function App() {
   return (
