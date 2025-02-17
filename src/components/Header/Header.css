@@ -1,9 +1,3 @@
-.header {
-  display: flex;
-  flex-direction: column;
-  background-color: #252422;
-}
-
 .top-header {
   display: flex;
   flex-direction: row;
