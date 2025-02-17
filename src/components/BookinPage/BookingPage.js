@@ -1,19 +1,10 @@
 import "./BookingPage.css";
+import carImage from "../../resources/images/car.png";
+import storageLogo from "../../resources/images/storage-logo.png";
 
 const BookingPage = (props) => {
   return (
     <body>
-        <div id="wrapper">
-            <header class="header">
-                <div class="top-header">
-                    <img src="../../resources/images/logo.png" id="logo-image"></img>
-                    <nav class="nav-bar">
-                        <img src="../../resources/images/login.png" id="login-image"></img>
-                        <button id="login-create">Login|Register</button>
-                    </nav>
-                </div>
-            </header>
-        </div>
         <main>
             <section class="driver-information-form">
                 <form action="/submit-booking" method="post" class="grid-container"> 
@@ -37,37 +28,37 @@ const BookingPage = (props) => {
             <div class="car-information-form">
                 <header class="car-rental-header">
                     <div class="rectangle-display">
-                        <img id="car-image" src="../../resources/images/car.png"></img>
+                        <img id="car-image" src={carImage}></img>
                     </div>      
                     <div class="car-rental-details">
-                        <h2 class="car-name">Car Name</h2>
-                        <p class="rent-period">Car rental period</p>
+                        <h2 class="car-name">{props.carName}</h2>
+                        <p class="rent-period">{props.rentalPeriod}</p>
                     </div>
                 </header>
                 <section class="rental-schedule-container">
 
                     <div class="rental-schedule-logos">
-                        <img src="../../resources/images/storage-logo.png" class="pickup-logo"></img>
+                        <img src={storageLogo} class="pickup-logo"></img>
                         <div class="vertical-line"></div>
-                        <img src="../../resources/images/storage-logo.png" class="dropoff-logo"></img>
+                        <img src={storageLogo} class="dropoff-logo"></img>
                     </div>
                     <div class="rental-schedule-text">
                         <div class="pickup-info">
                             <p class="pickup">Pickup</p>
-                            <h4>Ålesund</h4>
-                            <p class="pickup-time">Da., xx.Mnth., year | xx:xx</p>
+                            <h4>{props.pickUpLocation}</h4>
+                            <p class="pickup-time">{props.pickUpTime}</p>
                         </div>
                         <div class="dropoff-info">
                             <p class="dropoff">Dropoff</p>
-                            <h4>Ålesund</h4>
-                            <p class="dropoff-time">Da., xx.Mnth., year | xx:xx</p>
+                            <h4>{props.dropOffLocation}</h4>
+                            <p class="dropoff-time">{props.dropOffTime}</p>
                         </div>
                     </div>
                 </section>
                 <div class="payment-details">
                     <p>Renting costs:</p>
-                    <p>xxxxkr/day</p>
-                    <h3>Total: XX XXXkr</h3>
+                    <p>{props.costPerDay}</p>
+                    <h3>{props.totalCost}</h3>
                 </div>
             </div>
         </main>
